@@ -6,12 +6,12 @@ $('.button').on("click", function(){
         alert("Enter an input please");
         return;
     }
-    if(isNaN(input)){
-        var type = typeof input; //get type of input
+    if(typeof input === 'string'){
+        //var type = typeof input; //get type of input
         //alert("input is NOT a number, it is a " + type);
-        $('#result').html("input is NOT a number, it is a " + type)
+        $('#result').html("Yes, this is text")
         return;
     }
     //alert("input is a number");
-    $('#result').html("input is a number");
+    $('#result').html("No, this is NOT text");
 });
