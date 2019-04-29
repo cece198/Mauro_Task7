@@ -6,12 +6,12 @@ $('.button').on("click", function(){
         alert("Enter an input please");
         return;
     }
-    if(typeof input === 'string'){
+    if(input === " "){
         //var type = typeof input; //get type of input
         //alert("input is NOT a number, it is a " + type);
-        $('#result').html("Yes, this is text")
+        $('#result').html("This is not text")
         return;
     }
     //alert("input is a number");
-    $('#result').html("No, this is NOT text");
+    $('#result').html("This is text");
 });
