@@ -11,10 +11,14 @@
     <title>Task 7</title>
   </head>
   <body>
-        <input type="text" id="input">
-        <button class="button">Is this text?</button>
-        <div id="result" class="font-weight-bold">*Result goes here*</div>
-        <div id="tasks"></div>
+        <!---<input type="text" id="input">-->
+        <div class="input-group mb-3">
+            <input type="text" id="input" class="form-control" placeholder="Input Goes Here" aria-label="Input Goes Here" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2">Is this text?</button>
+            </div>
+          </div>
+          <div id="tasks" class="font-weight-bold"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
