@@ -14,4 +14,5 @@ $('.button').on("click", function(){
     }
     //alert("input is a number");
     $('#result').html("This is text");
+    $('#tasks').append(input);
 });
